@@ -11,7 +11,9 @@ bin/pip:
 	./bin/python get-pip.py
 	./bin/pip install fabric
 	rm -rf ./get-pip.py ./virtualenv.py
+	./bin/pip install -e .
 
 .PHONY: clean
 clean:
 	rm -rf bin/ include/ lib/ virtualenv.py get-pip.py pip-selfcheck.json
+
