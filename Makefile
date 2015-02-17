@@ -17,3 +17,6 @@ bin/pip:
 clean:
 	rm -rf bin/ include/ lib/ virtualenv.py get-pip.py pip-selfcheck.json
 
+.PHONY: run
+run: bin/pip
+	./bin/fab run
