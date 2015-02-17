@@ -1,7 +1,7 @@
 import os
 from flask import request, Flask
 
-app = Flask('URL echo server')
+app = Flask('nginxplain')
 app.debug = True
 
 url_echo = lambda: request.url + os.linesep

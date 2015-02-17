@@ -2,7 +2,6 @@
 #   $ CC=clang make
 
 bin/pip:
-	@echo 'need pip'
 	curl https://raw.githubusercontent.com/pypa/virtualenv/master/virtualenv.py \
 		> virtualenv.py
 	# - to ignore error, tend to throw with a 'No module named pip'
@@ -17,6 +16,6 @@ bin/pip:
 clean:
 	rm -rf bin/ include/ lib/ virtualenv.py get-pip.py pip-selfcheck.json
 
-.PHONY: run
-run: bin/pip
+.PHONY: echoes
+echoes: bin/pip
 	./bin/fab run
