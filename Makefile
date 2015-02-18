@@ -1,6 +1,12 @@
 # If you are on OS X, you might need to run it like:
 #   $ CC=clang make
 
+all: bin/pip custom.conf
+
+custom.conf:
+	@echo "# Here is your custom NGINX config. It's ignored by git" \
+		> custom.conf
+
 bin/pip:
 	curl https://raw.githubusercontent.com/pypa/virtualenv/master/virtualenv.py \
 		> virtualenv.py

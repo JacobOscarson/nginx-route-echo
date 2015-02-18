@@ -60,3 +60,5 @@ pip-selfcheck.json
 
 # The nginx.conf file is generated from a template
 nginx.conf
+# Your custom nginx rules
+custom.conf
