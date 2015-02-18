@@ -7,6 +7,7 @@ from tasks import root, template
 
 def configure():
     "Write the NGINX configuration file"
+    local('touch {}'.format(root('nginx.err')))
     with open(root('nginx.conf'), 'w') as fp:
         fp.write(template('nginx_t.conf', root=root()))
 
