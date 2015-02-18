@@ -29,4 +29,6 @@ instance with an experimental URI will return:
 
 Here you can see that the URL echo server think's it's name is simply
 `'localhost'`, and that the entire URI have been transmitted
-correctly.
+correctly. The purpose of the tool is that you should experiment with
+this nginx configuration and see what different rules are transforming
+your requests to in the proxy.
